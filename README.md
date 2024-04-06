@@ -57,13 +57,20 @@
 ##
 
 
-## ‼️🔐 Importance of the Security Enhancement Measures
-‼️‼️ Discuss the measures implemented to address each identified vulnerability, referencing specific commits or code blocks where applicable.
+## 🔐 Importance of the Security Enhancement Measures Implemented
+1. ***Secure Storage of Sensitive Data:***
+	- Secure storage of sensitive data such as API keys and access tokens, are essentially the same as your keys to your house, or the passcode to your phone; *they keep things secure*. Suppose an attacker maliciously gained access to this data. They could then do things such as impersonate users, steal data, perform irreversible actions *(causing permanent damage to the app)*, and more. Hence the reason why it is so important to secure this data. Encrypting this data ensures that, even if accessed by an attacker, it cannot be used, as the attacker wouldn't have the key to decrypt it.
+2. ***Secure Authentication Practices:***
+	- Secure authentication practices are very important as it is the process of verifying the identity of a user. A lack of authentication can lead to vulnerabilities, such as unauthorized access. The use of strong, hashed passwords, 2-factor authentication, and secure token handling are a few measures that will ensure only authorized users can access the system.
+3. ***Proper Input Validation and Sanitization:***
+	- Input validation/sanitization are the key to success against a wide array of attacks, including SQL injection, cross-site scripting *(XSS)*, and code injection. These attacks can result in unauthorized data access, data corruption, execution of malicious code on both the server or client-side, and much more. By validating/sanitizing inputs, it is garunteed that only expected/properly formatted data is processed by the app *(mitigating potential vulnerabilities)*.
+4. ***Addressing Insecure Code Practices:***
+	- It is extremely important to address any insecure code practices in your app, in order to reduce the vulnerabilities of your app and ensuring that if one or more areas are compromised, the others can protect the system as a whole. When it comes to securing your application, it's all about layers. Each security measure adds an extra layer of security that an attacker must bypass, reducing the chances of successful attacks.
 ##
 
 
-## ‼️👍 Reflection and Best Practices
-‼️‼️ Reflect on the lessons learned during the assessment process and outline the best practices you will implement to mitigate potential risks moving forward.
+## 👍 Reflection and Best Practices
+Throughout the process of completing this lab *(especially the 'implementing security measures' part)*, I learned a lot about security and best practices. From now on, I will ensure I perform a thorough security assessment on all of my applications before deploying them. To mitigate potential risks moving forward, I will make sure to implement best practices such as secure storage of sensitive data, secure authentication practices, and proper input validation and sanitization. In conclusion, I have gained a lot of new knowledge/skills when it comes to securing apps and will be implementing these moving forward.
 ##
 
 
